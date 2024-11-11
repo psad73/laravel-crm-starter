@@ -1,3 +1,8 @@
+<FilesMatch "\.php$">
+    <If "-f %{REQUEST_FILENAME}">
+        SetHandler "proxy:unix:/run/php/php8.3-fpm.sock|fcgi://h9k/"
+    </If>
+</FilesMatch>
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
