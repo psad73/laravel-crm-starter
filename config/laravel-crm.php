@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'crm_owner' => env('LARAVEL_CRM_OWNER', ''),
+    'crm_owner' => env('LARAVEL_CRM_OWNER', 'pawel.sadowski@itworks24.pl'),
 
     /*
     |--------------------------------------------------------------------------
@@ -54,11 +54,11 @@ return [
     |
     */
 
-    'currency' => env('LARAVEL_CRM_CURRENCY', 'USD'),
+    'currency' => env('LARAVEL_CRM_CURRENCY', 'PLN'),
 
-    'country' => env('LARAVEL_CRM_COUNTRY', 'United States'),
+    'country' => env('LARAVEL_CRM_COUNTRY', 'Polska'),
 
-    'language' => env('LARAVEL_CRM_LANGUAGE', 'english'),
+    'language' => env('LARAVEL_CRM_LANGUAGE', 'pl'),
 
     'timezone' => env('LARAVEL_CRM_TIMEZONE', 'UTC'),
 
@@ -177,6 +177,8 @@ return [
         'deliveries',
         'purchase-orders',
         'teams',
+        'recipe',
+        'participiants'
     ],
 
     /*
